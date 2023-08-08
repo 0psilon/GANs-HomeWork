@@ -32,21 +32,21 @@ As could be expected, the results are better than just a simple bayesian generat
 
 ## GANs - HW_3
 
-The task was to train a DCGAN architecure and implement and train a new GAN architecture, which was supposed to be based on DCGAN but altered with CSP-blocks used in a generator network. The CelebA dataset (64 x 64 pixels) was used for training. The results of a DCGAN performance after 10 epochs of training:
+The task was to train a DCGAN architecure and implement and train a new GAN architecture, which would be based on DCGAN and altered with CSP-blocks used in a generator network. The CelebA dataset (64 x 64 pixels) was used for training. The results of the DCGAN performance after 10 epochs of training:
 
 <p><img src="HW_3/pic_examples/dcgan.png"></p>
 
-However, the new architecture didn't work out that great. It was really hard to achieve any signs of convergeance and whatever I got didn't particulary fit what had been expected:
+However, the new architecture didn't perform as hoped. It was difficult to achieve any signs of convergeance and whatever was produced didn't particulary fit what had been expected:
 
 <p><img src="HW_3/pic_examples/csp_gan_2.png"></p>
 
-Although faces can be seen, it mostly looks like a beginning of a mode collapse, a known problem in generative adversarial approach.
+Although faces can be seen, it mostly looks like the beginning of a mode collapse, a known problem in the generative adversarial approach.
 
 
 
 ## Inpainting - HW_4
 
-The task was to research and try different pretrained networks for picture inpainting/inhancement. Such networks as MAT and GPEN were used for the assignment. The original picture, masked pictures and results as follows:
+The task was to research and try different pretrained networks for picture inpainting/enhancement. Such networks as MAT and GPEN were used for the assignment. The original picture, masked pictures, and results are as follows:
 
 Original picture:
 <p><img src="HW_4/pics_and_gifs/cropped_original.png"\></p>
@@ -69,7 +69,7 @@ GPEN inpainting:
 
 MAT inpainting (FFHQ weights) seems to be slightly better than MAT (CelebA weights) and a lot better than GPEN inpainting. Further experiments were conducted on the 1st masked picture after MAT inpainting (FFHQ weights).
 
-GPEN inhancement after MAT inpainting (FFHQ weights):
+GPEN enhancement after MAT inpainting (FFHQ weights):
 <p><img src="HW_4/pics_and_gifs/img_0_FFHQ_GPEN.jpg" height="512px"\></p>
 
-The picture got brighter, the resolution got higher. It looks like some make up was added, but GPEN inhancement did't improve any previous inpainting errors such as with nose area and slight lips asymmetry.
+The picture became brighter, the resolution became higher. It looks like some make up was added, but GPEN enhancement didn't improve any previous inpainting errors such as with the nose and lips (asymmetry).
